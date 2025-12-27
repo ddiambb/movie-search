@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="app.js" defer></script>
+
+</head>
+
+<body>
+    <nav class="nav">
+        <figure class="logo">
+            <img src="./ot4cnvhr.png" alt="">
+        </figure>
+        
+        <h1 class="nav__title">Movie Search</h1>
+    </nav>
+    <main class="main">
+        <div class="Search">
+            <input id="searchInput" class="search__input" placeholder="search movies" />
+            <select id="typeFilter" class="search__input">
+                <option value="">All</option>
+                <option value="movie">Movies</option>
+                <option value="series">Series</option>
+                <option value="episode">Episode</option>
+            </select>
+            <input id="yearFilter" class="search__input" type="number" placeholder="year" min="1900" max="2099" />
+
+            <button id="searchBtn" class="search__btn">Search</button>
+        </div>
+        <div id="load" class="load load--hidden">
+            <i class="fa-solid fa-spinner"></i>
+        </div>
+        <div id="grid" class="grid"></div>
+    </main>
+</body>
+
+</html>
