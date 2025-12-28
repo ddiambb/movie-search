@@ -42,10 +42,11 @@ async function searchMovies(query, type, year) {
 function renderMovies(movies) {
     if (movies.length === 0) {
         grid.innerHTML = `<p>No movies found.</p>`;
-        return;
+       // return;
     }
 
     grid.innerHTML = movies
+        .slice(0, 6)
         .map((movie) => {
             const poster =
                 movie.Poster && movie.Poster !== "N/A"
