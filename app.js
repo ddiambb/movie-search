@@ -11,7 +11,7 @@ const loadElement = document.querySelector("#load")
 const grid = document.getElementById("grid");
 
 function showLoad() {
-    console.log("SHOW loader");
+
     loadElement.classList.remove("load--hidden");
     
 }
