@@ -98,7 +98,7 @@ searchInput.addEventListener("keydown", (e) => {
     }
 });
 
-searchInput.value = "Search";
+searchInput.value = "";
 loadMovies();
 
 
